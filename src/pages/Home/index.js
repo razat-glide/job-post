@@ -1,14 +1,17 @@
 import { CardMainPost } from "components/Cards";
 import { mockPostData } from "shared/MockData";
+import { Container } from "reactstrap";
 
 export default function Home() {
   return (
     <>
-      {mockPostData.map((data, index) => (
-        <div key={"postData" + index}>
-          <CardMainPost {...data} />
-        </div>
-      ))}
+      <Container>
+        {mockPostData.map((data, index) => (
+          <div key={"postData" + index}>
+            <CardMainPost {...data} />
+          </div>
+        ))}
+      </Container>
     </>
   );
 }
