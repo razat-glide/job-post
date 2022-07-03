@@ -1,6 +1,6 @@
 import { CardMainPost } from "components/Cards";
 import { mockPostData } from "shared/MockData";
-import { Container } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 export default function Home() {
   return (

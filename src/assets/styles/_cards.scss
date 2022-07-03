@@ -1,0 +1,21 @@
+.card-main-post {
+  border: 1px solid #eff0f1;
+  border-radius: 26px;
+  margin-bottom: 20px;
+  transition: 0.2s;
+  &:hover {
+    box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.06);
+  }
+  .categor {
+    &ies {
+      display: flex;
+    }
+    &y-name {
+      min-width: 115px;
+      background: #f5f5fa;
+      border-radius: 4px;
+      margin-right: 14px;
+      padding: 8px 17px;
+    }
+  }
+}
