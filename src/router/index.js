@@ -1,3 +1,4 @@
+import Layout from "components/Layout";
 import { Home } from "pages";
 
 const { Outlet, Navigate, Route, Routes, BrowserRouter } = require("react-router-dom");
@@ -11,9 +12,14 @@ export default function Router() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route element={<Layout isMain />}>
+            <Route path="/" element={<Home />} />
+          </Route>
+
           <Route element={<PrivateWrapper />}>
-            <Route path="/dashboard" element={<>dashboard</>} />
+            <Route element={<Layout isDashboard />}>
+              <Route path="/dashboard" element={<>dashboard</>} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

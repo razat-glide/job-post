@@ -1,0 +1,17 @@
+$primary: #194bfb;
+
+$xxxl: 1499px;
+$xxl: 1299.98px;
+$xl: 1199.98px;
+$lg: 991.98px;
+$ml: 860.98px;
+$md: 767.98px;
+$sm: 575.98px;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+  ),
+  $theme-colors
+);

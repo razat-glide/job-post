@@ -1,3 +1,10 @@
+import { useLayoutContext } from "..";
+
 export default function Header() {
-  return <></>;
+  const pp = useLayoutContext();
+  return (
+    <header>
+      <pre>{JSON.stringify({ pp })}</pre>
+    </header>
+  );
 }

@@ -12,11 +12,11 @@ export default function CardMainPost(props) {
         </div>
         <p>{country}</p>
         <p>{description}</p>
-        <div className="categories">
+        {/* <div className="categories">
           {category.map((data) => (
             <span className="category-name">{data?.name}</span>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
